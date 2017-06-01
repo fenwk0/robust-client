@@ -20,6 +20,12 @@ public class ShakyRestController {
 
     @GetMapping("/boom")
     public int boom() throws InterruptedException {
-        return shakyBusinessService.deriveNumber();
+        return shakyBusinessService.boom();
     }
+
+    @GetMapping("/retry")
+    public int retry() throws InterruptedException {
+        return shakyBusinessService.retry();
+    }
+
 }
